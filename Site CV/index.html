@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 🔝 HEADER */
+        header {
+            background: #242f6d;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* 🧭 NAVBAR */
+        nav {
+            background: #444;
+            display: flex;
+            justify-content: center;
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            color: #D9E2E2;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* 📑 SECTIONS */
+        section {
+            padding: 3rem 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #242f6d;
+        }
+
+        /* 🛠️ COMPÉTENCES */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 💼 PROJETS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .project {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        /* 🔹 BOUTON À PROPOS */
+        .btn-about {
+            background: #242f6d;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.5s ease, transform 0.5s ease;
+        }
+
+        .btn-about:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* ⚓ FOOTER */
+        footer {
+            text-align: center;
+            background: #222;
+            color: white;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        body {
+            background: #B5D5F7
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 🔝 HEADER -->
+    <header class="header">
+        <div class="header-text">
+            <h1>Leconte Antoine</h1>
+            <p>Administrateur Système DevOps Alternance</p>
+        </div>
+        <img src="logoiscod.jpg" alt="Logo" class="logo">
+        <style>
+            .header {
+                position: relative;
+                /* nécessaire pour positionner le logo */
+                text-align: center;
+                /* centre le texte */
+                padding: 2rem;
+                background-color: #242f6d;
+                color: white;
+            }
+
+            .header h1 {
+                margin: 0;
+                font-size: 2.5rem;
+            }
+
+            .header p {
+                margin: 0.5rem 0 0 0;
+                font-size: 1.2rem;
+            }
+
+            .logo {
+                position: absolute;
+                /* positionnement absolu */
+                top: 10px;
+                /* à 10px du haut du header */
+                right: 20px;
+                /* à 20px du bord droit */
+                width: 150px;
+                height: auto;
+            }
+
+            /* Responsive pour mobile */
+            @media (max-width: 600px) {
+                .logo {
+                    position: static;
+                    /* logo sous le texte */
+                    display: block;
+                    margin: 10px auto 0 auto;
+                    /* centré sur mobile */
+                }
+            }
+        </style>
+    </header>
+
+    <!-- 🧭 NAVBAR -->
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#Mes coordonnées">Mes coordonnées</a>
+    </nav>
+
+    <!-- 🙋‍♂️ À PROPOS -->
+    <section id="about">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <h2>À propos</h2>
+            <a href="apropos.html" class="btn-about">Le CV version longue</a>
+        </div>
+        <p>
+            Passionné de développement web et de nouvelles technologies, je suis actuellement à la recherche
+            d’une alternance pour ma formation afin de devenir Administrateur Système DevOps. Curieux, rigoureux
+            et autonome, je sais travailler en équipe, m’adapter rapidement à de nouveaux outils et utiliser
+            l’intelligence artificielle à bon escient pour optimiser mon travail. Mon objectif : contribuer
+            à des projets innovants tout en continuant à apprendre et à évoluer dans ce domaine dynamique.
+        </p>
+
+
+        </div>
+    </section>
+
+
+    <!-- 🛠️ COMPÉTENCES -->
+    <section id="skills">
+        <h2>Compétences</h2>
+        <div class="skills">
+            <div class="skill">
+                <div class="skill-name">HTML / CSS / JS</div>
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="100%">0%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">MySQL</div>
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="70%">0%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">C / C++</div>
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="70%">0%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">GitHub</div>
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="80%">0%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Sublime Text / VS Code</div>
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="100%">0%</div>
+                </div>
+            </div>
+            <div class="skill empty"></div>
+            <div class="skill">
+                <div class="skill-name">ISTQB Foundation</div>
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="95%">0%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Virtual Box</div>
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="80%">0%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Assemblage PC</div>
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="90%">0%</div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .skill-name {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .progress-container {
+                width: 100%;
+                background-color: #ddd;
+                border-radius: 20px;
+                overflow: hidden;
+                margin-top: 5px;
+            }
+
+            .progress-bar {
+                height: 20px;
+                width: 0;
+                background-color: #4caf50;
+                text-align: right;
+                line-height: 20px;
+                color: white;
+                border-radius: 20px 0 0 20px;
+                transition: width 0.5s;
+            }
+
+            .skill.empty {
+                background: transparent;
+                box-shadow: none;
+            }
+        </style>
+    </section>
+
+    <script>
+        // Animation des barres de progression
+        document.addEventListener("DOMContentLoaded", () => {
+            const progressBars = document.querySelectorAll('.progress-bar');
+            progressBars.forEach(bar => {
+                let target = parseInt(bar.getAttribute('data-progress'));
+                let width = 0;
+                const interval = setInterval(() => {
+                    if (width >= target) {
+                        clearInterval(interval);
+                    } else {
+                        width++;
+                        bar.style.width = width + '%';
+                        bar.textContent = width + '%';
+                    }
+                }, 15);
+            });
+        });
+    </script>
+    </div>
+
+    </section>
+
+    <!-- 💼 PROJETS -->
+    <section id="projects">
+        <h2>Projets</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Site vitrine Portfolio</h3>
+                <p>Un site vitrine développé en HTML/CSS/JS.</p>
+                <br /> <br /> <br />
+                <img src="CVCODE.png" alt="Projet1">
+            </div>
+            <div class="project">
+                <h3>Creation de site e-commerce (inactif aujourd'hui)</h3>
+                <p>Un site de vente de produits en ligne. avec gestion des stocks et des paiements.</p>
+                <img src="creation-site-e-commerce.png" alt="Projet2">
+            </div>
+        </div>
+    </section>
+    <section id="Mes coordonnées">
+        <h2>Mes coordonnées</h2>
+        <p> 📩 Email : leconteantoinestmg@gmail.com
+            <br /> <br />
+            📞 Telephone : 07 82 32 91 90
+            <br /> <br />
+            <img src="LinkedIn_logo_initials.png" alt="LinkedIn" width="20"
+                style="vertical-align: middle; margin-right: 5px;">
+            <a href="https://www.linkedin.com/in/antoine-leconte-b95a73173/" target="_blank">Antoine Leconte</a>
+        </p>
+    </section>
+
+    <!-- ⚓ FOOTER -->
+    <footer>
+        <p>© 2025 Antoine Leconte – <a href="mailto:leconteantoinestmg@gmail.com">leconteantoinestmg@gmail.com</a></p>
+    </footer>
+
+</body>
+
+</html>

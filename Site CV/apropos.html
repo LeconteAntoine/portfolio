@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Compétences</title>
+</head>
+
+<body>
+    <br /><br />
+    <h1 align="center" class="titre">Zoom sur moi</h1>
+    <br /><br />
+    <p class="description">Passionné par les nouvelles technologies, le développement et l’administration système, j’ai
+        également
+        une solide expérience humaine grâce à mon parcours de maître-nageur.
+        Cela m’a permis d’acquérir des qualités essentielles : pédagogie, gestion de groupe et travail en équipe.
+        <br /><br />
+        🎓 Formations :
+        <br /><br />
+        ➜ 2025 Bachelor Administrateur Système DevOps - ISCOD Lille (en cours d'acquisition) - Alternance
+        <br />
+        <span class="highlight"> Rythme : 4 jours en entreprise / 1 jours à l'école (Flexible) </span>
+        <br />
+        ➜ 2025 Certification ISTQB Foundation (en cours d'acquisition) - Autodidacte
+        <br />
+        ➜ 2020-2021 BPJEPS AAN – Performeo Liévin
+        <br />
+        ➜ 2018-2020 DEUST IOSI – Université Polytechnique des Hauts-de-France Valenciennes
+        <br />
+        ➜ 2017-2012 Bac STMG mention – Lycée Arthur Rimbaud, Sin-le-Noble
+        <br /><br /><br />
+        💼 Expérience Professionnelle :
+        <br /><br />
+        ➜ 2024-2025 Maitre-Nageur Sauveteur - Piscine des Weppes, Herlies
+        <br />
+        ➜ 2021-2024 Maitre-Nageur Sauveteur - Aquarena, Arras
+        <br />
+        ➜ 2020 Conception et mise en ligne d’un site web e-commerce (plus accessible), Autodidacte
+        <br /><br /><br />
+        🌍 Langues :
+        <br /><br />
+        ➜ Anglais : lu, écrit, parlé (niveau intermédiaire)
+        <br /><br /><br />
+        🤝 Atouts personnels :
+        <br />
+        ➜ Travail en équipe
+        <br />
+        ➜ Curiosité et passion pour l’informatique
+        <br />
+        ➜ Motivation et rigueur
+        <br />
+        ➜ Aisance relationnelle
+        <br />
+        ➜ Gestion du stress et des priorités
+        <br /><br /><br />
+        ⚡ Centres d’intérêt :
+        <br />
+        ➜ Nouvelles technologies
+        <br />
+        ➜ Jeux vidéo
+        <br />
+        ➜ Natation, musculation
+        <br />
+        ➜ Pêche
+    </p>
+
+
+    <a href="index.html" class="btn-retour">
+        <img src="bouton-retour.png" alt="Retour" class="icon-retour">
+    </a>
+
+    <style>
+        body {
+            background: linear-gradient(-45deg, #ADD9D1, #beb2b9, #B5D5F7, #D4D1F4);
+            background-size: 500% 500%;
+            animation: gradientAnimation 10s ease infinite;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .titre {
+            color: #a51a1a;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            opacity: 0;
+            transform: scale(0.5);
+            text-align: center;
+            animation: fadeZoom 1s forwards;
+            animation-delay: 0.3s;
+        }
+
+        @keyframes fadeZoom {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .btn-retour {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: transparent;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-retour:hover {
+            background: transparent;
+            transform: scale(1.1);
+        }
+
+        .icon-retour {
+            width: 50px;
+            /* taille de ton image */
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .highlight {
+            font-weight: bold;
+            animation: pulse 5s infinite;
+        }
+
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                color: rgb(25, 155, 53);
+            }
+
+            100% {
+                transform: scale(1.1);
+                color: rgb(31, 67, 230);
+            }
+
+            50% {
+                transform: scale(1);
+                color: rgb(155, 25, 25);
+            }
+        }
+    </style>
+
+</body>
+
+</html>
